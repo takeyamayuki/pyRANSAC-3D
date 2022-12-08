@@ -7,7 +7,7 @@ sys.path.append(".")
 import pyransac3d as pyrsc
 
 # Load saved point cloud and visualize it
-pcd_load = o3d.io.read_point_cloud("tests/dataset/caixa.ply")
+pcd_load = o3d.io.read_point_cloud("/home/yonelab/workspace/lidar_data/run_pcd/LIV_run241.pcd")
 # o3d.visualization.draw_geometries([pcd_load])
 points = np.asarray(pcd_load.points)
 
